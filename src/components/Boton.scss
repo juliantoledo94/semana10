@@ -1,0 +1,53 @@
+$primary: pink;
+
+.btn{
+    background-color: $primary;
+}
+
+nav{
+    ul{
+
+        li{
+            &hover{
+
+            }
+        }
+    }
+}
+
+
+@function px-to-rem($px, $base-font-size: 16px){
+    @return $px / $base-font-size * 1rem;
+}
+
+
+
+
+/* 
+MIXIN
+se hace para usar codigo repetido
+
+@mixin center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    @include center-flex;
+} */
+
+/* .container{
+    width: 100%;
+
+    @media (min-width: 768px){
+        width: 750px;
+    }
+
+    @media (min-width: 1024px){
+        width: 1024;
+    }
+} */
+
+
+
